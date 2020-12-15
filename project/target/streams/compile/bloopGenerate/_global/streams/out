@@ -1,0 +1,4 @@
+[debug] [twitter-build] Classpath dependencies List()
+[debug] [twitter-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'twitter-build' to '/Users/wilmer/Desktop/twitter/project/.bloop/twitter-build.json'
+[success] Generated .bloop/twitter-build.json

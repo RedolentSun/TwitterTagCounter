@@ -1,0 +1,86 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.4 (AdoptOpenJDK Java 11.0.8)
+[debug]       Load.loadUnit: plugins took 199.698797ms
+[debug]       Load.loadUnit: defsScala took 0.37047ms
+[debug] [Loading] Scanning directory /Users/wilmer/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/wilmer/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 28.706529 ms
+[debug]           Load.resolveProject(global-plugins) took 58.812677ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /Users/wilmer/.sbt/1.0/plugins, plugins: List(<none>))) took 132.861946ms
+[debug] [Loading] Done in /Users/wilmer/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 166.568232ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.246357ms
+[debug]     Load.loadUnit(file:/Users/wilmer/.sbt/1.0/plugins/, ...) took 383.899382ms
+[debug]   Load.apply: load took 937.856087ms
+[debug]   Load.apply: resolveProjects took 7.350381ms
+[debug]   Load.apply: finalTransforms took 123.605201ms
+[debug]   Load.apply: config.delegates took 12.372911ms
+[debug]   Load.apply: Def.make(settings)... took 712.116593ms
+[debug]   Load.apply: structureIndex took 133.330244ms
+[debug]   Load.apply: mkStreams took 1.864488ms
+[info] loading global plugins from /Users/wilmer/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 4082.227318ms
+[debug]                 Load.loadUnit: plugins took 17.966619ms
+[debug]                 Load.loadUnit: defsScala took 0.003857ms
+[debug] [Loading] Scanning directory /Users/wilmer/Desktop/twitter/project/project
+[debug]                   Load.loadUnit: mkEval took 6.160023ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/wilmer/Desktop/twitter/project/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 3.750469 ms
+[info] loading settings for project twitter-build-build from metals.sbt ...
+[debug]                     Load.resolveProject(twitter-build-build) took 3.511999ms
+[debug]                   Load.loadTransitive: finalizeProject(Project(id twitter-build-build, base: /Users/wilmer/Desktop/twitter/project/project, plugins: List(<none>))) took 7.94153ms
+[debug] [Loading] Done in /Users/wilmer/Desktop/twitter/project/project, returning: (twitter-build-build)
+[debug]                 Load.loadUnit: loadedProjectsRaw took 172.122097ms
+[debug]                 Load.loadUnit: cleanEvalClasses took 13.192535ms
+[debug]               Load.loadUnit(file:/Users/wilmer/Desktop/twitter/project/project/, ...) took 204.046776ms
+[debug]             Load.apply: load took 205.250219ms
+[debug]             Load.apply: resolveProjects took 0.131055ms
+[debug]             Load.apply: finalTransforms took 18.598102ms
+[debug]             Load.apply: config.delegates took 0.466947ms
+[debug]             Load.apply: Def.make(settings)... took 165.806415ms
+[debug]             Load.apply: structureIndex took 35.31208ms
+[debug]             Load.apply: mkStreams took 0.002755ms
+[info] loading project definition from /Users/wilmer/Desktop/twitter/project/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]           Load.loadUnit: plugins took 702.667134ms
+[debug]           Load.loadUnit: defsScala took 0.004735ms
+[debug] [Loading] Scanning directory /Users/wilmer/Desktop/twitter/project
+[debug]             Load.loadUnit: mkEval took 0.230561ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/wilmer/Desktop/twitter/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.95566 ms
+[info] loading settings for project twitter-build from metals.sbt ...
+[debug]               Load.resolveProject(twitter-build) took 129.236873ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id twitter-build, base: /Users/wilmer/Desktop/twitter/project, plugins: List(<none>))) took 132.946101ms
+[debug] [Loading] Done in /Users/wilmer/Desktop/twitter/project, returning: (twitter-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 145.226928ms
+[debug]           Load.loadUnit: cleanEvalClasses took 1.624208ms
+[debug]         Load.loadUnit(file:/Users/wilmer/Desktop/twitter/project/, ...) took 850.38377ms
+[debug]       Load.apply: load took 854.17177ms
+[debug]       Load.apply: resolveProjects took 0.337767ms
+[debug]       Load.apply: finalTransforms took 55.867986ms
+[debug]       Load.apply: config.delegates took 0.273662ms
+[debug]       Load.apply: Def.make(settings)... took 137.733998ms
+[debug]       Load.apply: structureIndex took 35.715157ms
+[debug]       Load.apply: mkStreams took 0.002892ms
+[info] loading project definition from /Users/wilmer/Desktop/twitter/project
+[debug] Evaluating tasks: bloopInstall
+[debug] Running task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@258a8584, check cycles: false, forcegc: true
