@@ -46,7 +46,7 @@ class Tag(tag_ : String,
 
 object Main extends JFXApp {
   implicit val system = ActorSystem("twitter")
-  val token = "Bearer AAAAAAAAAAAAAAAAAAAAAGrdKQEAAAAAtH4h%2BhR1AedlmYlxGDqDtfHTskI%3DXbX9JR1fvHGeoACsxYReXGXINeIWKCukOWqL5QWJa7wCKlinSJ"
+  val token = "" // REPLACE WITH YOUR TWITTER APP TOKEN MAKE SURE YOU HAVE BEARER FOLLOWED BY A SPACE BEFORE THE TOKEN
   implicit val messageFormat = jsonFormat2(Message)
   implicit val tweetFormat = jsonFormat1(Tweet)
 
@@ -119,13 +119,14 @@ object Main extends JFXApp {
             ListMap(((sum.keySet ++ tweetCount.keySet).map {tag => (tag, sum.getOrElse(tag, 0) + tweetCount.getOrElse(tag, 0))}.toMap).filter(x => x._1 matches("[#][a-zA-Z0-9]+")).toSeq.sortWith(_._2 > _._2).take(10): _*)
           }
         }
-        .withAttributes(ActorAttributes.supervisionStrategy(decider))
-        .runWith(Sink.foreach( a =>
+        .toMat(Sink.foreach( a =>
           Platform.runLater{new Runnable { def run() = 
             a.map(a => characters.append(new Tag(a._1, a._2.toString())))
             characters.clear()
           }}
-        ))
+        ))(Keep.left)
+        .withAttributes(ActorAttributes.supervisionStrategy(decider))
+        .run()
   stage.setOnHiding(new EventHandler[WindowEvent]() {
     override def handle(event: WindowEvent) {
       system.terminate()
